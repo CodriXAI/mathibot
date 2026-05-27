@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/css_apartados/circulo.css">
+    <title>Apartado - Circulo</title>
+</head>
+<body>
+    <header>
+        <div class="cabecera">
+            <a href="#">
+                <img class="menu" src="../../design/assets/menu.png" alt="img_menu">
+            </a>
+            <a href="../index.html">
+                <img class="logo" src="../../design/assets/logo.png" alt="logotipo" class="logo">
+            </a>
+            <br>
+        </div>
+    </header>
+    <div class="contenido">
+        <section class="info">
+            <h2>C&Iacute;RCULO</h2>
+            <p>El circulo es una figura redonda la cual a diferencia de las dem&aacute;s, esta NO posee lados como tal.
+                Sino que en su lugar tiene unas particulares propiedades, las m&aacute;s conocidas son:
+            </p>
+            <h3 style="color:burlywood;">RADIO:</h3>
+            <p>Una l&iacute;nea imaginaria que une cualquier punto de la circunferencia con el centro</p>
+            <p>Con solo conocer este elemento es posible calcular algunas propiedades</p>
+            <h3 style="color:burlywood;">DIAMETRO:</h3>
+            <p>Dos l&iacute;neas que se unen desde el centro del c&iacute;rculo, ser&iacute;a como un doble radio</p>
+            <h3 style="color:burlywood;">CIRCUNFERENCIA:</h3>
+            <p>Contorno de la figura, la que contiene al c&iacute;rculo</p>
+        </section>
+        <section class="numPI">
+            <h1 style="color:greenyellow;">Informaci&oacute;n adicional:</h1>
+            <h2>El Numero PI (π)</h2>
+            <p>Es un n&uacute;mero especial que nos permitir&aacute; realizar ciertos c&aacute;lculos en algunos casos.</p>
+            <p>Su valor m&aacute;s popular es el de <b style="color:burlywood;">3,14</b> aunque realmente posee muchos digitos.</p>
+        </section>
+        <section class="forms">
+            <h2>F&oacute;rmulas del c&iacute;rculo:</h2>
+            <h3 style="background-color:rgba(0, 0, 0, 0.41);"><i>Diametro = radio * 2</i></h3>
+            <h3 style="background-color:rgba(0, 0, 0, 0.41);"><i>&Aacute;rea = radio^2 * PI(π)</i></h3>
+            <h3 style="background-color:rgba(0, 0, 0, 0.41);"><i>Circunferencia = Diametro * PI(π)</i></h3>
+        </section>
+        <section class="calc">
+            <h1>¡Pongamoslo a prueba!</h1>
+            <p>Selecciona una de las siguientes opciones y ofreceme los valores determinados:</p>
+            <br>
+            <section class="op_cant">
+                <h2>Elige cantidad de decimales</h2>
+                <p>Decimal actual: <label id="actual" style="color:aqua"> -</label></p>
+                <input style="font-size: 16px;" type="number" placeholder="Max. 10 dígitos" class="calcule" id="cant_num">
+                <button style="font-size: 17px; margin:auto;" onClick="cantidad()">Confirmar</button>
+                <!--POSIBLES MENSAJES-->
+                <p style="color:red; display: none; margin:auto;" id="error_cant">Se excedió el límite</p>
+                <p style="color:rgb(0, 255, 26); display: none; margin: auto;" id="ok_cant">Cambios realizados</p>
+                <p style="color:rgb(242, 255, 0); display: none; margin: auto;" id="equal_cant">Ese valor esta elegido</p>
+            </section>
+            <div class="calculos">
+                <h2>Diametro - Per&iacute;metro y &Aacute;rea</h2>
+                <p>Ingrese el valor de su radio:</p>
+                <input class="cuadrado" type="number" id="radio">
+                <br>
+                <button onclick="general()">Calcular</button>
+                <br>
+            </div>
+            <br>
+            <div display="flex;" id="result">
+                <nav style="color:burlywood;">El di&aacute;metro es:</nav>
+                <label style="color: aqua;" id="Diametro">-</label>
+                <nav style="color:burlywood;">El per&iacute;metro es:</nav>
+                <label style="color: aqua;" id="Perimetro">-</label>
+                <nav style="color:burlywood;">El &aacute;rea es:</nav>
+                <label style="color: aqua;" id="Area">-</label>
+            </div>
+            <div style="display:none;" id="error">
+                <p style="color:red;">Valor ingresado no valido</p>
+            </div>
+        </section>
+        <br>
+        <footer>
+            <a href="../index.html">Volver</a>
+        </footer>
+    </div>
+    <script src="../js/js_apartados/circulo.js"></script>
+</body>
+</html>

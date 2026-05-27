@@ -1,0 +1,148 @@
+/*Estructura estandar*/
+body{
+    background-color: rgb(62, 61, 61);
+    margin:0;
+    padding:0;
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content:center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    min-height: 100vh;
+}
+header{
+    background-color: rgb(28, 28, 28);
+    width: 100%;
+    position: fixed;
+    z-index: 300;
+}
+.contenido{
+    margin: 80px auto;
+}
+.cabecera{
+    height: 70px;
+    max-height: 70px;
+    min-width:320px;
+    display:block;
+    line-height: 4px;
+}
+.menu{
+    max-width:40px;
+    max-height: 40px;
+    padding: 15px;
+}
+.logo{
+    max-width: 280px;
+    max-height: 70px;
+}
+/* Apartado de Info.*/
+.info{
+    color:white;
+    text-align: center;
+    margin:10px;
+    padding:4px;
+    background-color: rgba(0, 0, 0, 0.247);
+}
+.info h2{
+    font-size: 30px;
+}
+/* Apartado de Formulas*/
+.form{
+    color:white;
+    text-align: center;
+    margin:10px;
+}
+.form div{
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.131);
+    padding:10px;
+}
+/*Calculos*/
+#error p{
+    display: flex;
+    margin:150px auto;
+}
+#results{
+    display:flex;
+    justify-content: space-between;
+}
+.calc{
+    color:white;
+    text-align: center;
+    margin:10px;
+}
+.calc div{
+    background-color: rgba(0, 0, 0, 0.284);
+    height: 400px;
+    max-width: 290px;
+    margin: auto;
+    padding: 25px;
+    font-size: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.calc input{
+    width: 130px;
+    height: 50px;
+    margin: auto;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 10px;
+    border: white 2px solid;
+    outline: none;
+}
+button{
+    width: 110px;
+    height: 40px;
+    margin: auto;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 10px;
+    border: 2px white solid;
+    outline: none;
+}
+.op_cant{
+    height: 400px;
+    max-width: 320px;
+    background-color: rgba(0, 0, 0, 0.284);
+    padding: 10px;
+    display: flex;
+    margin:20px auto;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 20px;
+}
+select{
+    color: white;
+    background-color: black;
+    margin: auto;
+    width: 60%;
+    height: 20%;
+    text-align: center;
+    font-size: 20px;
+    outline: none;
+}
+.lineal{
+    display: inline-block;
+}
+/*Back*/
+footer{
+    display: flex;
+    justify-content: center;
+    margin: 10px auto;
+}
+footer a{
+    color:white;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.158);
+    border:3px white solid;
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/css_apartados/cuadrado.css">
+    <title>Apartado - Cuadrado</title>
+</head>
+<body>
+    <header>
+        <div class="cabecera">
+            <a href="#">
+                <img class="menu" src="../../design/assets/menu.png" alt="img_menu">
+            </a>
+            <a href="../index.html">
+                <img class="logo" src="../../design/assets/logo.png" alt="logotipo" class="logo">
+            </a>
+            <br>
+        </div>
+    </header>
+    <div class="contenido">
+        <section class="info">
+            <h2>CUADRADO</h2>
+            <p>El cuadrado es una figura cuya caracter&iacute;stica principal es que sus 4 lados tienen <b>
+                La MISMA longitud</b>.</p>
+            <p>Por lo tanto, es posible calcular su <b>PER&Iacute;METRO y &Aacute;REA</b> con solo conocer <b>UN LADO.</b></p>
+            <h2 style="color:red">¡IMPORTANTE!</h2>
+            <p>Cuando hablamos del per&iacute;metro es la unidad pero si hablamos acerca del
+                &aacute;rea, se utiliza la <b style="color:burlywood">unidad^2 (cuadrados).</b>
+            </p>
+        </section>
+        <section class="form">
+            <h1>F&oacute;rmulas del Cuadrado:</h1>
+            <div><i>Per&iacute;metro = Lado x 4</i></div>
+            <br>
+            <div><i>&Aacute;rea = Lado^2 (Lado x Lado)</i></div>
+        </section>
+        <section class="calc">
+            <h1>¡Pongamoslo a prueba!</h1>
+            <p>Selecciona una de las siguientes opciones y ofreceme los valores determinados:</p>
+            <br>
+            <div class="opciones">
+                <h2>Elige una unidad:</h2>
+                <select id="op" onchange="seleccion()">
+                    <option value="cm" selected >cm</option>
+                    <option value="m">m</option>
+                    <option value="km">km</option>
+                </select>
+            </div>
+            <section class="op_cant">
+                <h2>Elige cantidad de decimales</h2>
+                <p>Decimal actual: <label id="actual" style="color:aqua"> -</label></p>
+                <input style="font-size: 16px;" type="number" placeholder="Max. 10 dígitos" class="calcule" id="cant_num">
+                <button style="font-size: 17px; margin:auto;" onClick="cantidad()">Confirmar</button>
+                <!--POSIBLES MENSAJES-->
+                <p style="color:red; display: none; margin:auto;" id="error_cant">Se excedió el límite</p>
+                <p style="color:rgb(0, 255, 26); display: none; margin: auto;" id="ok_cant">Cambios realizados</p>
+                <p style="color:rgb(242, 255, 0); display: none; margin: auto;" id="equal_cant">Ese valor esta elegido</p>
+            </section>
+            <br><br>
+            <div class="mediciones">
+                <h2>Per&iacute;metro y &Aacute;rea</h2>
+                <p>Ingresar valor de un lado:</p>
+                <input class="cuadrado" type="number" id="lado">
+                <br>
+                <button onclick="general()">Calcular</button>
+                <br>
+            </div>
+            <br>
+            <div id="results">
+                <nav style="color: burlywood;" class="result">El per&iacute;metro es:</nav>
+                <label style="color: aqua;" id="Resultado">- </label><span id="medida">cm</span>
+    
+                <nav style="color: burlywood;" class="result">El &aacute;rea es:</nav>
+                <label style="color: aqua;" id="Resultado2">- </label><span id="medida2">cm</span><span>^2</span>
+            </div>
+            <div style="display:none;" id="error">
+                <p style="color:red; display:flex; justify-content:center;">Valor ingresado no valido</p>
+            </div>
+        </section>
+        <br>
+        <footer>
+            <a href="../index.html">Volver</a>
+        </footer>
+    </div>
+    <br>
+    <script src="../js/js_apartados/cuadrado.js"></script>
+</body>
+</html>

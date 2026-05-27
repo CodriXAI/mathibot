@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/css_menu/cuenta_azar.css">
+    <title>Suma - Azar</title>
+</head>
+<body>
+    <h2>¡Este ejercicio es para ti!</h2>
+    <br>
+    <p>Cu&aacute;nto es el resultado de...</p>
+    <br>
+    <div class="ejercicio">
+        <p class="cuenta">
+            <label id="N1"></label> + <label id="N2"></label>
+        </p>
+    <br>
+    <input type="number" id="resul_usuario">
+    <br>
+    <button onclick="comprobar()">Comprobar</button>
+    <p style="display:none; text-align: center; color:rgb(2, 243, 46)" id="ok">¡CORRECTO!</p>
+    <p style=" display:none; text-align: center; color:red" id="error">Es incorrecto el valor es: 
+        <label id="true_valor"></label>
+    </p>
+    </div>
+    <br>
+    <div class="under">
+        <button onclick="refresh()">Nuevo</button>
+        <a href="../azar_ap.html">Volver</a>
+    </div>
+</body>
+<script src="../../js/js_menu/azar/suma.js"></script>
+</html>

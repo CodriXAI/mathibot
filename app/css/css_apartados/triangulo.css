@@ -1,0 +1,155 @@
+/*Estructura estandar*/
+body{
+    background-color: rgb(62, 61, 61);
+    margin:0;
+    padding:0;
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content:center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    min-height: 100vh;
+}
+header{
+    background-color: rgb(28, 28, 28);
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+.contenido{
+    margin:80px auto;
+}
+.cabecera{
+    height: 70px;
+    max-height: 70px;
+    min-width:320px;
+    display:block;
+    line-height: 4px;
+}
+.menu{
+    max-width:40px;
+    max-height: 40px;
+    padding: 15px;
+}
+.logo{
+    max-width: 280px;
+    max-height: 70px;
+}
+/*info*/
+.info{
+    background-color: rgba(0, 0, 0, 0.371);
+    color: white;
+    margin: 15px;
+    text-align: center;
+    padding:5px;
+}
+.exInfo{
+    background-color: rgba(0, 0, 0, 0.371);
+    color: white;
+    margin: 15px;
+    text-align: center;
+    padding:5px;
+}
+/*Formulas*/
+.forms{
+    background-color: rgba(0, 0, 0, 0.371);
+    color: white;
+    margin: 15px;
+    text-align: center;
+    padding:5px;
+    font-size: 20px;
+}
+/*calculos*/
+.calc{
+    color:white;
+    text-align: center;
+    margin:10px;
+}
+.calc div{
+    background-color: rgba(0, 0, 0, 0.284);
+    max-width: 290px;
+    margin: auto;
+    padding: 25px;
+    font-size: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.opciones{
+    height: 590px; 
+}
+.calcEqui{
+    height: 500px;
+}
+.calcEsca{
+    height: 750px;
+}
+.calcIso{
+    height: 700px;
+}
+.calcRect{
+    height: 750px;
+}
+select{
+    color: white;
+    background-color: black;
+    margin: auto;
+    width: 60%;
+    height: 20%;
+    text-align: center;
+    font-size: 20px;
+    outline: none;
+}
+.calcule{
+    width: 130px;
+    height: 50px;
+    margin: auto;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 10px;
+    border: white 2px solid;
+    outline: none;
+}
+button{
+    width: 110px;
+    height: 40px;
+    margin: 30px;
+    background-color: rgba(0, 0, 0, 0.321);
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 10px;
+    border: 2px white solid;
+    outline: none;
+}
+/*triangulos_toggle*/
+#equilatero{
+    display:block;
+}
+#escaleno{
+    display:none;
+}
+#isoseles{
+    display:none;
+}
+#rectangulo{
+    display:none;
+}
+/*Back*/
+footer{
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+}
+footer a{
+    color:white;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.158);
+    border:3px white solid;
+}

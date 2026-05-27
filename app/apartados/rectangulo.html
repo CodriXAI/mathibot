@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/css_apartados/rectangulo.css">
+    <title>Apartado - Rectangulo</title>
+</head>
+<body>
+    <header>
+        <div class="cabecera">
+            <a href="#">
+                <img class="menu" src="../../design/assets/menu.png" alt="img_menu">
+            </a>
+            <a href="../index.html">
+                <img class="logo" src="../../design/assets/logo.png" alt="logotipo" class="logo">
+            </a>
+            <br>
+        </div>
+    </header>
+    <div class="contenido">
+        <section class="info">
+            <h2>RECT&Aacute;NGULO</h2>
+            <p>El rect&aacute;ngulo es una figura similar al cuadrado, con la diferencia de que posee <b>DOS PARES</b> de lados iguales</p>
+            <p>Un par es m&aacute;s largo que el otro</p>
+            <h2 style="color:red">¡IMPORTANTE!</h2>
+            <p>Cuando hablamos del per&iacute;metro es la unidad pero si hablamos acerca del
+                &aacute;rea, se utiliza la <b style="color:burlywood">unidad^2 (cuadrados).</b>
+            </p>
+            <p>Cabe recalcar que aqu&iacute; se denomina al lado inferior <b style="color:burlywood">base</b> y a su perpendicular 
+                <b style="color:burlywood">altura</b>
+            </p>
+            <img  style="width:300px; height: 300px;" src="../../design/assets/img_rectangulo/fundamentos_rectangulo.png" alt="fundamentos_rectangulo">
+            <br/>
+            <p>Un tip extra es que si trazamos una l&iacute;nea diagonal de un extremo a otro, obtendremos dos tri&aacute;ngulos
+                rect&aacute;ngulos iguales, de ahi el porque la f&oacute;rmula de dichos tri&aacute;ngulos es "Base x altura dividido 2"
+            </p>
+            <img  style="width:300px; height: 300px;" src="../../design/assets/img_rectangulo/fundamentos_rectangulo_2.png" alt="fundamentos_rectangulo_2">
+        </section>
+        <section class="form">
+            <h1>F&oacute;rmulas del Rect&aacute;ngulo:</h1>
+            <div><i>Per&iacute;metro = (Lado A x 2) + (Lado B x 2)</i></div>
+            <br>
+            <div><i>&Aacute;rea = Base x Altura</i></div>
+        </section>
+        <section class="calc">
+            <h1>¡Pongamoslo a prueba!</h1>
+            <p>Selecciona una de las siguientes opciones y ofreceme los valores determinados:</p>
+            <br>
+            <div class="opciones">
+                <h2>Elige una unidad:</h2>
+                <select id="op" onchange="seleccion()">
+                    <option value="cm" selected >cm</option>
+                    <option value="m">m</option>
+                    <option value="km">km</option>
+                </select>
+            </div>
+            <section class="op_cant">
+                <h2>Elige cantidad de decimales</h2>
+                <p>Decimal actual: <label id="actual" style="color:aqua"> -</label></p>
+                <input style="font-size: 16px;" type="number" placeholder="Max. 10 dígitos" class="calcule" id="cant_num">
+                <button style="font-size: 17px; margin:auto;" onClick="cantidad()">Confirmar</button>
+                <!--POSIBLES MENSAJES-->
+                <p style="color:red; display: none; margin:auto;" id="error_cant">Se excedió el límite</p>
+                <p style="color:rgb(0, 255, 26); display: none; margin: auto;" id="ok_cant">Cambios realizados</p>
+                <p style="color:rgb(242, 255, 0); display: none; margin: auto;" id="equal_cant">Ese valor esta elegido</p>
+            </section>
+            <br><br>
+            <div class="mediciones">
+                <h2>Per&iacute;metro y &Aacute;rea</h2>
+                <p>Ingresar valor de la base:</p>
+                <input class="cuadrado" type="number" id="ladoBase">
+                <br>
+                <p>Ingresar valor de la altura:</p>
+                <input class="cuadrado" type="number" id="ladoAltura">
+                <br>
+                <button onclick="general()">Calcular</button>
+                <br>
+            </div>
+            <br>
+            <div id="results">
+                <nav style="color: burlywood;" class="result">El per&iacute;metro es:</nav>
+                <label style="color: aqua;" id="Resultado">- </label><span id="medida">cm</span>
+    
+                <nav style="color: burlywood;" class="result">El &aacute;rea es:</nav>
+                <label style="color: aqua;" id="Resultado2">- </label><span id="medida2">cm</span><span>^2</span>
+            </div>
+            <div style="display:none;" id="error">
+                <p style="color:red; display:flex; justify-content:center;">Valor ingresado no valido</p>
+            </div>
+        </section>
+        <br>
+        <footer>
+            <a href="../index.html">Volver</a>
+        </footer>
+    </div>
+    <br>
+    <script src="../js/js_apartados/rectangulo.js"></script>
+</body>
+</html>
