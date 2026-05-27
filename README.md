@@ -29,11 +29,12 @@ Since Mathibot is built with standard web technologies, there's no installation 
    git clone https://github.com/your-username/mathibot.git
    ```
 2. Open `app/index.html` in any modern web browser.
-3. Start calculating!
+3. In PC, select inspector (F12) and select responsive design mode for mobile phones
+4. Start calculating!
 
 ## Version History (Beta)
 
-- **v1.0-beta**: Complete project reorganization, path optimization, and menu bug fixes. Added scroll indicators for better UX.
+- **v0.6-beta**: Complete project reorganization, path optimization, and menu bug fixes. Added scroll indicators for better UX.
 - **v0.6**: Rectangle support and improved description logic.
 - **v0.4/0.5**: Triangle and Circle implementations + Random Challenge mode.
 
